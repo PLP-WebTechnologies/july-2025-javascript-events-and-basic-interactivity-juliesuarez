@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Interactive Page</h1>
+        <button id="theme-toggle">Toggle Dark Mode</button>
+    </header>
+
+    <main>
+        <section class="faq-section">
+            <h2>Frequently Asked Questions (FAQ)</h2>
+            <div class="faq-item">
+                <h3 class="faq-question">What is DOM Manipulation?</h3>
+                <div class="faq-answer">
+                    <p>The Document Object Model (DOM) is a programming interface for web documents. DOM Manipulation is changing the structure, style, and content of a web page using a language like JavaScript.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">What is an Event Listener?</h3>
+                <div class="faq-answer">
+                    <p>An event listener is a procedure or function in a computer program that waits for an event to occur. Examples of events are a user clicking a button, hovering over an element, or pressing a key.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <h2>Create an Account</h2>
+            <form id="signup-form" novalidate>
+                <div class="form-control">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="At least 3 characters">
+                    <small class="error-message"></small>
+                </div>
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter a valid email">
+                    <small class="error-message"></small>
+                </div>
+                <div class="form-control">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="At least 8 characters">
+                    <small class="error-message"></small>
+                </div>
+                <button type="submit">Sign Up</button>
+                <p id="success-message" class="success-message"></p>
+            </form>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
